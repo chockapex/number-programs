@@ -1,4 +1,4 @@
-
+//A number which is prime when read backwards and forwards.
 public class Emirp {
 
 	public static void main(String[] args) {

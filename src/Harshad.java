@@ -1,4 +1,4 @@
-
+//A number that is divisible by the sum of its digits.
 public class Harshad {
 
 	public static void main(String[] args) {
