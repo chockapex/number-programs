@@ -1,3 +1,5 @@
+/*A number is said to be a palindrome number when is reverse is equal to the number itself.
+ * */
 public class Palindrome {
 
 	public static boolean isPalindrome(int num) {
