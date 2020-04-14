@@ -6,19 +6,14 @@ public class Smith {
 	public static void main(String[] args) {
 		int num = NumberOperations.inputNumber();
 		int n = num, sumOfDigitsOfPrimeFactors = 0;
-		for(int i = 2 ; i <= n ; i++) {
-			if(n <= 1 || i == num) {
-				break;
-			}
+		int i = 2;
+		while(n > 2) {		
 			if(n % i == 0) {
-				if(i > 9) {
-					sumOfDigitsOfPrimeFactors += NumberOperations.sumOfDigits(i);
-				}
-				else {
-					sumOfDigitsOfPrimeFactors += i;
-				}
+				sumOfDigitsOfPrimeFactors += NumberOperations.sumOfDigits(i);
 				n /= i;
-				i = 1;
+			}
+			else {
+				i++;
 			}
 		}
 		int sumOfDigits = NumberOperations.sumOfDigits(num);
